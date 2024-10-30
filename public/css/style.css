@@ -1,0 +1,16 @@
+.custom-card {
+    position: relative; /* Importante para el posicionamiento del pseudo-elemento */
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Mantiene la sombra detrás de la card */
+    border-radius: 10px; /* Asegúrate de que coincida con la card */
+    background: linear-gradient(180deg, #EBB42C 0%, #012B28 60%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
